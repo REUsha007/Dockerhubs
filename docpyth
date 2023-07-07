@@ -1,0 +1,17 @@
+# Specify the base image
+FROM ubuntu:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the application files to the container
+COPY . /app
+
+# Install any necessary dependencies
+# (Replace this with the actual commands needed for your application)
+RUN apt update
+RUN apt install -y
+
+# Specify the command to run when the container starts
+# (Replace this with the actual command needed to start your application)
+CMD ["python", "app.py"] 
