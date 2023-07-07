@@ -1,0 +1,12 @@
+# Base image
+FROM ubuntu:latest
+
+# Set working directory
+WORKDIR /app
+
+# Copy application files
+COPY . .
+
+# Execute the application
+CMD ["echo", "Hello, World!"]
+
